@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.sidenav {
+  background: #88038a !important;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}

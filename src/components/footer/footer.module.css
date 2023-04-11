@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer_mainDiv {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(194, 213, 96),
+    rgb(51, 104, 124)
+  );
+  /* text-align: center; */
+  height: auto;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 82%;
+  height: 70px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.footer_mainDiv a {
+  color: white;
+  text-decoration: none;
+}

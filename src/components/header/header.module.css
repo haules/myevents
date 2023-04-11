@@ -1,0 +1,36 @@
+.header {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(194, 213, 96),
+    rgb(51, 104, 124)
+  );
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 0;
+  padding-bottom: 0;
+  height: 70px;
+  margin: 0 auto;
+  width: 82%;
+}
+
+.header li {
+  color: white;
+  margin-left: 20px;
+  display: inline;
+  font-size: 20px;
+  font-weight: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+/* the "a{}" is Link tag in the header */
+
+.header h1 {
+  font-size: 12px;
+  float: right;
+  color: rgb(125, 60, 60);
+}

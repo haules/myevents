@@ -1,0 +1,46 @@
+.mainDiv_parent{
+    /* background: #D3D3D3; */
+    margin: 10px 0 10px 0;
+    
+}
+
+.firstSection{
+    border-style: double;
+    margin-bottom: 5px;
+}
+.secondSection {
+    border-style: double;
+    margin-bottom: 5px;
+}
+
+.website{
+    /* make the div width as long as the text */
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+.website a {
+    text-decoration: none;
+
+}
+
+.name{
+
+}
+
+.email{
+
+}
+
+.country{
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+.listResults{
+
+}

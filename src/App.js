@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/homePage/home-page";
+import Services from "./pages/services/services";
+import AboutUs from "./pages/about_us/about-us";
+import Table from "./pages/Table/Table";
+import MySideNav from "./components/header/MySideNav";
+import Company from "./pages/sub-pages/company/company";
+import ContactUs from "./pages/sub-pages/contact-us/contactUs";
+import LoginPage from "./pages/login/LoginPage";
+import styles from "./components/layout/layout.module.css";
 
 function App() {
+  const [token, setToken] = useState(() =>
+    JSON.parse(localStorage.getItem("auth") || false)
+  );
+
+  useEffect(() => {
+    localStorage.setItem("auth", JSON.stringify(token));
+  }, [token]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+
+      <div className={styles.mainDiv}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+
+          <Route path="/loginPage" element={<LoginPage />} />
+          {/* <Route path="/home" element={<HomePage />} /> */}
+          <Route path="/services" element={<Services />} />
+          <Route path="/Table" element={<Table />} />
+          <Route path="/about-us" element={<AboutUs />} />
+
+          {/* add route for "Company" and "Contact Us" to work | NOT WORKING*/}
+          <Route path="/pages/sub-pages/company" element={<Company />} />
+          <Route path="/pages/sub-pages/contactUs" element={<ContactUs />} />
+        </Routes>
+        <MySideNav />
+      </div>
+      {/* <Footer /> */}
+    </Router>
   );
 }
 

@@ -1,0 +1,17 @@
+{
+    "name" : "Test - hard coded data",
+    "website" : "www.testing.com",
+    "email" : "testing@google.com",
+    "country" :[
+        {"id": "1", "name" : "USA"},
+        {"id": "2", "name" : "Canada"},
+        {"id": "3", "name" : "Japan"},
+        {"id": "4", "name" : "England"},
+        {"id": "5", "name" : "United Kingdom"},
+        {"id": "6", "name" : "Germany"},
+        {"id": "7", "name" : "South Africa"},
+        {"id": "8", "name" : "Republic Democratic of Congo"},
+        {"id": "9", "name" : "China"},
+        {"id": "10", "name" : "Romania"}
+    ]
+}
