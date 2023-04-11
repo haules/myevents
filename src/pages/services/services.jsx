@@ -5,7 +5,7 @@ const Services = () => {
   const [img, setImg] = useState("");
   const [res, setRes] = useState([]);
 
-  const AccessKey = "your access key";
+  const AccessKey = "your unsplash access key";
 
   const fetchRequest = async () => {
     const data = await fetch(
